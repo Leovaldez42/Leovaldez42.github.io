@@ -6,6 +6,8 @@
   "homepage": "http://leovaldez42.github.io/",
   "scripts": {
     "start": "webpack-dev-server --mode development --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "code-format": "eslint */**/*.{ts,tsx} --fix",
