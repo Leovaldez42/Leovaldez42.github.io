@@ -2,7 +2,7 @@ import path from 'path'
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-const BUILD_REPOSITORY = 'algomaster99.github.io'
+const BUILD_REPOSITORY = 'leovaldez42.github.io'
 
 /**
  * Parameters passed through command-line
