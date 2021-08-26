@@ -23,8 +23,8 @@ export const LINKS = [
     url: 'https://github.com/Leovaldez42',
   },
   {
-    site: 'Medium',
-    url: 'https://leovaldez42.medium.com/',
+    site: 'Thinkbrew',
+    url: 'https://www.thinkbrew.in',
   },
   {
     site: 'LinkedIn',
@@ -36,8 +36,9 @@ export const COC_WEBSITE = 'https://www.communityofcoders.in/'
 export const SPECIALBHARAT = 'https://www.typedtales.com/'
 export const CUPS = 'https://www.7cups.com/@leovaldez19'
 export const TALK_CAMPUS = 'https://www.talkcampus.io/'
+export const THINK_BREW = 'https://www.thinkbrew.in'
 
-export const EXPERIENCE_1 = `At VJTI, I helped in development of <a href=${COC_WEBSITE} target="_blank">Community of Coders's official website</a>. I have also helped in developing applications for Mumbai Vikas Samiti and <a href=${SPECIALBHARAT}target="_blank">Special Bharat Olympiad
+export const EXPERIENCE_1 = `At VJTI, I helped in development of <a href=${COC_WEBSITE} target="_blank">Community of Coders's official website</a>. I have also helped in developing applications for Mumbai Vikas Samiti and <a href=${SPECIALBHARAT}target="_blank">Special Bharat Olympiad</a>. I have also started my completly self hosted blog <a href=${THINK_BREW} target="_blank"> thinkbrew</a>.
 `
 
 export const EXPERIENCE_2 = `Apart from web applications, I have also worked, with Firebase, AWS and a few Machine Learning Projects.
