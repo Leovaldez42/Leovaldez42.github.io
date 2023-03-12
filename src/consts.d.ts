@@ -3,8 +3,8 @@ export const FULL_NAME = 'gaurav sharma'
 export const EMAIL = 'ghsharma@et.vjti.ac.in'
 export const DESIGNER = 'vineet arora'
 export const DESIGNER_LINK = 'https://dribbble.com/vineetarora'
-export const SHORT_BIO = `A final year undergrad at VJTI. Currently working remotely with
-  <a href=https://www.jpmorganchase.com/" target="__blank" rel="noopener noreferrer">JP Morgan Chase & Co.</a> as a summer intern.
+export const SHORT_BIO = `A software developer at
+  <a href=https://www.jpmorganchase.com/" target="__blank" rel="noopener noreferrer">JP Morgan Chase & Co.</a> and college graduate from VJTI.
 `
 
 export enum THEME {
