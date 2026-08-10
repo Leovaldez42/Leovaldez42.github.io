@@ -2,7 +2,7 @@ import React from 'react'
 
 import { LINKS } from '../../consts'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 class SocialLinks extends React.PureComponent {
   render(): JSX.Element {

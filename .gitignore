@@ -1,4 +1,5 @@
 node_modules
-
-# Build repository
+dist
+.DS_Store
+*.local
 leovaldez42.github.io

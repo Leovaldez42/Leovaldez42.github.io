@@ -4,13 +4,12 @@
 @at-root :root
   font-family: consts.$font-family
 
-// Pass `#root`to `:global` to use the ID `#root` as is otherwise it gets
-// hashed by webpack.
-@at-root html, body, :global(#root)
+// Global stylesheet (not CSS modules) — target #root directly.
+@at-root html, body, #root
   font-size: 16px
   letter-spacing: 0.02em
   overflow-x: hidden
   position: relative
 
-:global(#root)
+#root
   overflow-y: hidden

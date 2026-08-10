@@ -1,10 +1,10 @@
 import React, { ChangeEventHandler } from 'react'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 interface Props {
   checked: boolean
-  themeChange: ChangeEventHandler
+  themeChange: ChangeEventHandler<HTMLInputElement>
 }
 
 class ThemeSwitch extends React.PureComponent<Props> {

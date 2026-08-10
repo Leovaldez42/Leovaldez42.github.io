@@ -2,7 +2,7 @@ import React from 'react'
 
 import Diamond from '../diamond'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 const STYLENAME = [
   styles.left1,
@@ -28,6 +28,9 @@ class Overlay extends React.PureComponent {
     const diamond2 = document.getElementById('diamond2')
     const diamond3 = document.getElementById('diamond3')
     const diamond4 = document.getElementById('diamond4')
+    if (!diamond1 || !diamond2 || !diamond3 || !diamond4) {
+      return
+    }
     if (windowWidth < 768) {
       // <= sm
       diamond1.style.left = `${windowWidth / 2 - 92}px`

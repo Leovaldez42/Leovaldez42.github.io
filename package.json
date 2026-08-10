@@ -1,66 +1,34 @@
 {
   "name": "portfolio",
-  "version": "0.4.0",
+  "version": "1.0.0",
+  "private": true,
   "description": "Gaurav Sharma's slice of internet",
-  "main": "index.js",
-  "homepage": "http://leovaldez42.github.io/",
+  "homepage": "https://leovaldez42.github.io/",
+  "type": "module",
   "scripts": {
-    "start": "webpack-dev-server --mode development --hot",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d leovaldez42.github.io",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "code-format": "eslint */**/*.{ts,tsx} --fix",
-    "style-format": "stylelint **/*.{sass,scss} --fix --custom-syntax sugarss"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leovaldez42/portfolio.git"
+    "url": "git+https://github.com/Leovaldez42/Leovaldez42.github.io.git"
   },
   "author": "Gaurav Sharma",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/algomaster99/portfolio/issues"
-  },
   "dependencies": {
-    "gh-pages": "^5.0.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/preset-typescript": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "@types/react": "^16.9.29",
-    "@types/react-dom": "^16.9.5",
-    "@types/webpack": "^4.41.10",
-    "@types/webpack-dev-server": "^3.10.1",
-    "@typescript-eslint/eslint-plugin": "^2.27.0",
-    "@typescript-eslint/parser": "^2.27.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^3.4.2",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.0.3",
-    "postcss-cli": "^7.1.0",
-    "postcss-loader": "^3.0.0",
-    "prettier": "^2.0.4",
-    "sass": "^1.26.3",
-    "sass-loader": "^8.0.2",
-    "style-loader": "^1.1.3",
-    "stylelint": "^13.3.0",
-    "stylelint-config-sass-guidelines": "^7.0.0",
-    "sugarss": "^2.0.0",
-    "ts-node": "^8.8.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^4.13.3"
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "gh-pages": "^5.0.0",
+    "sass": "^1.83.4",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.11"
   }
 }

@@ -1,4 +1,4 @@
-import React, { ChangeEventHandler, ChangeEvent } from 'react'
+import React, { ChangeEvent } from 'react'
 
 import Header from './header'
 import Overlay from './overlay'
@@ -6,15 +6,15 @@ import Cover from './cover'
 import Content from './content'
 import { THEME } from '../consts'
 
-import container from '../styles/container.sass'
-import styles from './App.sass'
+import container from '../styles/container.module.sass'
+import styles from './App.module.sass'
 
 interface State {
   checked: boolean
   theme: THEME
 }
 
-class App extends React.PureComponent<{}, State> {
+class App extends React.PureComponent<object, State> {
   state = {
     checked: true,
     theme: THEME.DARK,
@@ -34,7 +34,7 @@ class App extends React.PureComponent<{}, State> {
     }
   }
 
-  themeChange = (event: ChangeEvent): ChangeEventHandler => {
+  themeChange = (event: ChangeEvent<HTMLInputElement>): void => {
     const theme: THEME = event.target.checked ? THEME.DARK : THEME.LIGHT
     this.setState(
       {
@@ -45,7 +45,6 @@ class App extends React.PureComponent<{}, State> {
         localStorage.setItem('theme', this.state.theme)
       }
     )
-    return
   }
 
   render(): JSX.Element {

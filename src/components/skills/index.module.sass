@@ -1,0 +1,21 @@
+@use 'src/consts'
+@use 'src/styles/theme'
+@use 'src/styles/transition'
+
+.logo-container
+  display: flex
+  margin-top: 2.5em
+
+.icon
+  @include theme.which-theme('color', 'icon-colour')
+  @include transition.transition(consts.$transition-duration, color)
+  display: inline-flex
+  height: 36px
+  margin-right: 2em
+  width: 36px
+
+  svg
+    display: block
+    fill: currentColor
+    height: 100%
+    width: 100%

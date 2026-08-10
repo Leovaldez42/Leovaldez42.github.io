@@ -2,7 +2,7 @@ import React from 'react'
 
 import { DESIGNER, DESIGNER_LINK, PORTFOLIO_REPOSITORY } from '../../consts'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 class Footer extends React.PureComponent {
   render(): JSX.Element {

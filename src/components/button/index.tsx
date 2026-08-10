@@ -2,7 +2,7 @@ import React from 'react'
 
 import { TYPE } from '../../consts'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 interface Props {
   link: string
@@ -26,7 +26,7 @@ class MainButton extends React.PureComponent<Props> {
       <a
         href={this.props.link}
         className={styles[buttonType]}
-        target={this.props.newTab && '_blank'}
+        target={this.props.newTab ? '_blank' : undefined}
         rel="noopener noreferrer"
       >
         {this.props.text}

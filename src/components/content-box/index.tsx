@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 interface Props {
   content: string

@@ -1,10 +1,14 @@
+/**
+ * Portfolio content — edit this file to update bio, experience, links, and meta.
+ * Components import from `./consts`, which re-exports these values.
+ */
 export const SHORT_NAME = 'gaurav'
 export const FULL_NAME = 'gaurav sharma'
 export const EMAIL = 'ghsharma@et.vjti.ac.in'
 export const DESIGNER = 'vineet arora'
 export const DESIGNER_LINK = 'https://dribbble.com/vineetarora'
 export const SHORT_BIO = `A software developer at
-  <a href=https://www.jpmorganchase.com/" target="__blank" rel="noopener noreferrer">JP Morgan Chase & Co.</a> and college graduate from VJTI.
+  <a href="https://www.jpmorganchase.com/" target="_blank" rel="noopener noreferrer">JP Morgan Chase & Co.</a> and college graduate from VJTI.
 `
 
 export enum THEME {
@@ -38,7 +42,7 @@ export const CUPS = 'https://www.7cups.com/@leovaldez19'
 export const TALK_CAMPUS = 'https://www.talkcampus.io/'
 export const THINK_BREW = 'https://www.thinkbrew.in'
 
-export const EXPERIENCE_1 = `At VJTI, I helped in development of <a href=${COC_WEBSITE} target="_blank">Community of Coders's official website</a>. I have also helped in developing applications for Mumbai Vikas Samiti and <a href=${SPECIALBHARAT}target="_blank">Special Bharat Olympiad</a>. I have also started my completly self hosted blog <a href=${THINK_BREW} target="_blank"> thinkbrew</a>.
+export const EXPERIENCE_1 = `At VJTI, I helped in development of <a href=${COC_WEBSITE} target="_blank" rel="noopener noreferrer">Community of Coders's official website</a>. I have also helped in developing applications for Mumbai Vikas Samiti and <a href=${SPECIALBHARAT} target="_blank" rel="noopener noreferrer">Special Bharat Olympiad</a>. I have also started my completly self hosted blog <a href=${THINK_BREW} target="_blank" rel="noopener noreferrer"> thinkbrew</a>.
 `
 
 export const EXPERIENCE_2 = `Apart from web applications, I have also worked, with Firebase, AWS and a few Machine Learning Projects.
@@ -50,10 +54,11 @@ export const TECHNICAL_SKILLS_1 = `My internship and projects have given me a go
 export const TECHNICAL_SKILLS_2 = `Being a full-stack developer, I am also familiar with technologies such as C++, Javascript, React, Redux, Django, Flutter, Android Studio, HTML/CSS.
 `
 
-export const NOT_TECHNICAL_SKILLS_1 = `Being a listener at <a href=${CUPS} target="_blank">7 cups</a> and a volunteer at <a href=${TALK_CAMPUS} target="_blank">Talk Campus</a>, I understand the importance of user empathy and interpersonal and communication skills. 
+export const NOT_TECHNICAL_SKILLS_1 = `Being a listener at <a href=${CUPS} target="_blank" rel="noopener noreferrer">7 cups</a> and a volunteer at <a href=${TALK_CAMPUS} target="_blank" rel="noopener noreferrer">Talk Campus</a>, I understand the importance of user empathy and interpersonal and communication skills. 
 `
 
 export const NOT_TECHNICAL_SKILLS_2 = `Apart from work, I spend time writing stories, reading about Cosmology and Psychology, contributing to open-source, and playing chess.
 `
 
-export const PORTFOLIO_REPOSITORY = 'https://github.com/leovaldez42/portfolio'
+export const PORTFOLIO_REPOSITORY =
+  'https://github.com/Leovaldez42/Leovaldez42.github.io'

@@ -6,7 +6,7 @@ import { FULL_NAME, SHORT_BIO, TYPE } from '../../consts'
 import me from '../../assets/me.jpeg'
 import resume from '../../assets/resume.pdf'
 import cv from '../../assets/cv.pdf'
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 class Cover extends React.PureComponent {
   render(): JSX.Element {

@@ -4,12 +4,12 @@ import ThemeSwitch from '../theme-switch'
 import Diamond from '../diamond'
 import { SHORT_NAME } from '../../consts'
 
-import container from '../../styles/container.sass'
-import styles from './index.sass'
+import container from '../../styles/container.module.sass'
+import styles from './index.module.sass'
 
 interface Props {
   checked: boolean
-  themeChange: ChangeEventHandler
+  themeChange: ChangeEventHandler<HTMLInputElement>
 }
 
 class Header extends React.PureComponent<Props> {

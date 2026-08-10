@@ -17,7 +17,7 @@ import {
 } from '../../consts'
 
 import resume from '../../assets/resume.pdf'
-import styles from './index.sass'
+import styles from './index.module.sass'
 
 class Content extends React.PureComponent {
   render(): JSX.Element {
