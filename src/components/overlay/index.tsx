@@ -33,22 +33,22 @@ class Overlay extends React.PureComponent {
     }
     if (windowWidth < 768) {
       // <= sm
-      diamond1.style.left = `${windowWidth / 2 - 92}px`
-      diamond2.style.left = `${windowWidth / 2 - 72}px`
-      diamond3.style.left = `${windowWidth / 2 + 68}px`
-      diamond4.style.left = `${windowWidth / 2 + 76}px`
+      diamond1.style.left = `${windowWidth / 2 - 98}px`
+      diamond2.style.left = `${windowWidth / 2 - 76}px`
+      diamond3.style.left = `${windowWidth / 2 + 72}px`
+      diamond4.style.left = `${windowWidth / 2 + 82}px`
     } else if (windowWidth < 992) {
       // < md
-      diamond1.style.left = `${windowWidth / 2 - 108}px`
-      diamond2.style.left = `${windowWidth / 2 - 84}px`
-      diamond3.style.left = `${windowWidth / 2 + 80}px`
-      diamond4.style.left = `${windowWidth / 2 + 88}px`
+      diamond1.style.left = `${windowWidth / 2 - 112}px`
+      diamond2.style.left = `${windowWidth / 2 - 88}px`
+      diamond3.style.left = `${windowWidth / 2 + 84}px`
+      diamond4.style.left = `${windowWidth / 2 + 94}px`
     } else if (windowWidth >= 992) {
       // >= md
-      diamond1.style.left = `${windowWidth / 2 - 132}px`
-      diamond2.style.left = `${windowWidth / 2 - 96}px`
+      diamond1.style.left = `${windowWidth / 2 - 128}px`
+      diamond2.style.left = `${windowWidth / 2 - 98}px`
       diamond3.style.left = `${windowWidth / 2 + 104}px`
-      diamond4.style.left = `${windowWidth / 2 + 112}px`
+      diamond4.style.left = `${windowWidth / 2 + 114}px`
     }
   }
 

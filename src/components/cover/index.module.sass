@@ -1,56 +1,51 @@
-@use 'sass:math'
-
 @use 'src/consts'
 @use 'src/styles/media'
 @use 'src/styles/theme'
 @use 'src/styles/transition'
 @use 'src/styles/link'
 
-/* Image styles */
-$crop-size: 248
-$side: $crop-size / math.sqrt(2)
-$rotate-deg: 45deg
-
-$crop-size-sm: $crop-size / 1.4
-$side-sm: $crop-size-sm / math.sqrt(2)
-
-$crop-size-md: $crop-size / 1.2
-$side-md: $crop-size-md / math.sqrt(2)
-
-// Due to rotating the `image-cropper`
-$margin-error: 20px
+/* Soft-square portrait — sized so cover CTAs stay above the fold */
+$crop-size: 220
+$crop-size-sm: 168
+$crop-size-md: 196
 
 .cover-container
-  height: 100%
+  align-items: center
+  box-sizing: border-box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  // Keep photo → name → bio → résumé/CV inside the first viewport
+  min-height: calc(100dvh - 96px)
+  padding: 0.75rem 0 1.25rem
 
 .image-cropper
-  align-items: center
-  border-radius: 4px
-  display: flex
-  flex-shrink: 0 // By default, Chrome sets flex-shrink to 1 (:face-palm:)
-  height: #{$side}px
+  border-radius: 24px
+  flex-shrink: 0
+  height: #{$crop-size}px
   margin: 0 auto
-  margin-top: 20px + $margin-error
   overflow: hidden
   position: relative
-  transform: rotate($rotate-deg)
-  width: #{$side}px
+  width: #{$crop-size}px
 
 .me
   @include link.set-link-style(a)
-  left: -24px
-  position: relative
-  transform: rotate(-$rotate-deg)
-  width: 304px
+  display: block
+  height: 100%
+  max-width: none
+  object-fit: cover
+  // Center the face in the soft square
+  object-position: center 20%
+  width: 100%
 
 .full-name
   @include theme.which-theme('color', 'header')
   @include transition.transition(consts.$transition-duration, color)
-  font-size: 3.7em
+  font-size: 2.75em
   font-weight: bold
-  letter-spacing: 8px
-  line-height: 76px
-  margin-top: 1.5em
+  letter-spacing: 6px
+  line-height: 1.15
+  margin-top: 1.1rem
   text-align: center
   text-transform: uppercase
 
@@ -58,44 +53,55 @@ $margin-error: 20px
   @include theme.which-theme('color', 'content')
   @include transition.transition(consts.$transition-duration, color)
   @include link.set-link-style(a)
-  font-size: 1.5em
-  line-height: 36px
+  font-size: 1.15em
+  line-height: 1.45
+  margin-top: 0.5rem
+  max-width: 36rem
   text-align: center
 
 .cover-button
   display: flex
   flex-wrap: wrap
   justify-content: center
-  margin-top: 2.5em
+  margin-top: 1.25rem
   width: 100%
 
   a
     flex-basis: 15%
-    margin: 0 1em
+    margin: 0 0.75em
 
 @include media.respond-below(sm)
+  .cover-container
+    min-height: calc(100dvh - 40px)
+    padding: 0.5rem 0 1rem
+
   .full-name
-    font-size: 2em
+    font-size: 1.65em
     letter-spacing: 0.04em
-    line-height: 38px
-    margin-top: 2em
+    margin-top: 0.9rem
 
   .short-bio
-    font-size: 15px
-    line-height: 24px
+    font-size: 14px
+    line-height: 1.4
+    margin-top: 0.35rem
 
   .image-cropper
-    height: #{$side-sm}px
-    margin-top: 60px + $margin-error
-    width: #{$side-sm}px
+    border-radius: 20px
+    height: #{$crop-size-sm}px
+    width: #{$crop-size-sm}px
 
   .cover-button
-    margin-top: 3.2em
+    margin-top: 1rem
 
     a
-      flex-basis: 25%
+      flex-basis: 40%
+      margin: 0 0.4em
 
 @include media.respond-between(sm, md)
   .image-cropper
-    height: #{$side-md}px
-    width: #{$side-md}px
+    height: #{$crop-size-md}px
+    width: #{$crop-size-md}px
+
+  .full-name
+    font-size: 2.25em
+    letter-spacing: 5px
